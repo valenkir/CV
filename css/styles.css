@@ -1,0 +1,41 @@
+#portrait {
+  height: 200px;
+  width: 160px;
+  border-radius: 10%;
+  margin-top: 1%;
+  border-style: solid;
+  border-color: rgb(228 203 158);
+}
+
+#cv-header {
+  background-color: rgb(95 120 110);
+  text-align: center;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1%;
+  color: wheat;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1%;
+  color: wheat;
+}
+
+#contacts {
+  list-style-type: none;
+}
+
+header a {
+  color: wheat;
+}
+
+header hr {
+  color: rgb(228 203 158);
+}
+
+body {
+  background-color: #c5d8d1;
+}
