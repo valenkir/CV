@@ -14,33 +14,111 @@
     <header id="cv-header">
       <img src="./images/cv-photo.jpg" alt="Valentyna's photo" id="portrait" />
       <h1>Valentyna Boriak</h1>
-      <h3 id="job">QA Engineer</h3>
+      <h3 id="job"><abbr title="Quality assurance">QA</abbr> Engineer</h3>
+      <address id="contacts">
+        <a href="mailto:valen.boriak@gmail.com" class="contacts"
+          >valen.boriak@gmail.com</a
+        >
+        <a href="tel:+99991901894" class="contacts">+99991901894</a>
+        <span class="contacts contacts-location">Poltava, Ukraine</span>
+      </address>
       <hr />
-      <ul id="contacts">
-        <li>
-          <a href="mailto:valen.boriak@gmail.com">valen.boriak@gmail.com</a>
-        </li>
-        <li><a href="tel:+99991901894">+99991901894</a></li>
-      </ul>
     </header>
     <main>
-      <section>
+      <section id="profile">
         <h2>Profile</h2>
+        <p>
+          Experienced and dedicated QA engineer with excellent knowledge of
+          software development processes. Performed the roles of the Scrum
+          Master and the QA lead. Enjoy mentoring and meeting facilitation.
+          Eager to improve the product's quality and help teams grow
+          professionally.
+        </p>
       </section>
-      <section>
+      <section id="employment-history">
         <h2>Employment history</h2>
       </section>
-      <section>
+      <section id="education">
         <h2>Education</h2>
+        <p>
+          Master of Software Engineering
+          <br />
+          Kharkiv National University of Radio Electronics (2015 - 2017)
+        </p>
+        <p>
+          Bachelor of Program Engineering
+          <br />
+          Kharkiv National University of Radio Electronics (2011 - 2015)
+        </p>
       </section>
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
+        <label for="manual-testing" class="skills-meter">Manual testing</label>
+        <meter id="manual-testing" value="0.85"></meter>
+        <br />
+        <label for="test-design" class="skills-meter">Test design</label>
+        <meter id="test-design" value="0.85"></meter>
+        <br />
+        <label for="api-testing" class="skills-meter">API testing</label>
+        <meter id="api-testing" value="0.7"></meter>
+        <br />
+        <label for="cy-js" class="skills-meter">Cypress/Javascript</label>
+        <meter id="cy-js" value="0.4"></meter>
+        <br />
+        <label for="sql" class="skills-meter">SQL</label>
+        <meter id="sql" value="0.3"></meter>
+        <br />
+        <label for="html-css" class="skills-meter">HTML/CSS</label>
+        <meter id="html-css" value="0.3"></meter>
+        <br />
+        <label for="git" class="skills-meter">Git</label>
+        <meter id="git" value="0.5"></meter>
+        <br />
+        <label for="jira" class="skills-meter">Jira</label>
+        <meter id="jira" value="0.7"></meter>
+        <br />
+        <label for="ci-cd" class="skills-meter">Jenkins/Bitbucket</label>
+        <meter id="ci-cd" value="0.5"></meter>
+        <br />
+        <label for="agile" class="skills-meter">Agile (Scrum/Kanban)</label>
+        <meter id="agile" value="0.65"></meter>
       </section>
-      <section>
+      <section id="certificates">
         <h2>Certificates</h2>
+        <picture id="jira-certificate">
+          <source
+            media="(min-width:800px)"
+            srcset="./images/jira-start-certificate-m.png"
+          />
+          <img
+            src="./images/jira-start-certificate-s.png"
+            alt="IAMPM: Jira start course certificate"
+          />
+        </picture>
+        <br />
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="./images/iam-scrum-certificate-m.png"
+          />
+          <img
+            src="./images/iam-scrum-certificate-s.png"
+            alt="honour's degree certificate; IAMPM: Scrum Master course"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="./images/qa-marathon-certificate-m.png"
+          />
+          <img
+            src="./images/qa-marathon-certificate-s.png"
+            alt="honour's degree certificate; IAMPM: Scrum Master course"
+          />
+        </picture>
       </section>
     </main>
-    <footer>
+    <footer id="cv-footer">
       <h2><a href="">Portfolio</a></h2>
     </footer>
   </body>
