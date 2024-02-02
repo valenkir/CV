@@ -14,12 +14,12 @@ body {
 #cv-header {
   background-color: #3d315b;
   text-align: center;
-  color: white;
 }
 
 h1 {
   font-size: 26px;
   margin-top: 1%;
+  color: white;
 }
 
 h2 {
@@ -32,6 +32,11 @@ h3 {
   font-size: 20px;
   margin-top: 1%;
   margin-bottom: 1%;
+  color: white;
+}
+
+.company-heading {
+  margin: 1% auto auto 6%;
 }
 
 address {
@@ -39,7 +44,7 @@ address {
 }
 
 .contacts {
-  color: inherit;
+  color: white;
   margin-right: 1%;
   font-size: 18px;
 }
@@ -57,12 +62,12 @@ p {
   color: white;
   font-size: 20px;
   width: 70%;
-  margin: 2% auto 1% 6%;
+  margin: 0.5% auto 1% 6%;
   line-height: 1.5;
 }
 
 .employment-period {
-  color: #9effdf;
+  color: #a8ffe2;
   font-size: 16px;
 }
 
