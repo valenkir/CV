@@ -8,7 +8,7 @@ body {
   width: 160px;
   border-radius: 10%;
   margin-top: 2%;
-  border: 0.3em solid white;
+  border: 5px solid #d9dbf1;
 }
 
 #cv-header {
@@ -18,18 +18,18 @@ body {
 }
 
 h1 {
-  font-size: 1.7em;
+  font-size: 26px;
   margin-top: 1%;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 22px;
   margin: 2% auto 2% 5%;
   color: white;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 20px;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -41,16 +41,12 @@ address {
 .contacts {
   color: inherit;
   margin-right: 1%;
-  font-size: 1.1em;
+  font-size: 18px;
 }
 
-header hr {
-  margin-top: 2%;
-  border: 1.5px solid white;
-}
-
-main hr {
+hr {
   margin: 2% auto 2% auto;
+  border: 1.5px solid white;
 }
 
 footer a {
@@ -59,15 +55,28 @@ footer a {
 
 p {
   color: white;
-  font-size: 1.3em;
+  font-size: 20px;
   width: 70%;
-  margin: 2% auto 2% 6%;
+  margin: 2% auto 1% 6%;
   line-height: 1.5;
+}
+
+.employment-period {
+  color: #9effdf;
+  font-size: 16px;
+}
+
+ul {
+  color: white;
+  list-style-type: disc;
+  margin-left: 7%;
+  line-height: 2;
+  font-size: 20px;
 }
 
 picture.certificate img {
   margin: 1% auto auto 6%;
-  border: 0.3em solid #d9dbf1;
+  border: 6px solid #d9dbf1;
   border-radius: 3%;
 }
 
@@ -78,38 +87,70 @@ picture.certificate img.first-certificate {
 
 .skill-measurement-text {
   color: white;
-  font-size: 1.3em;
+  font-size: 20px;
   margin: 2% auto auto 6%;
 }
 
 .skill-measurement-85 {
-  width: 15em;
-  height: 1.2em;
+  width: 240px;
+  height: 20px;
   background: linear-gradient(to right, #639a88 0 85%, #ffffff 85% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
 
 .skill-measurement-70 {
-  width: 15em;
-  height: 1.2em;
+  width: 240px;
+  height: 20px;
   background: linear-gradient(to right, #639a88 0 70%, #ffffff 70% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
 
 .skill-measurement-50 {
-  width: 15em;
-  height: 1.2em;
+  width: 240px;
+  height: 20px;
   background: linear-gradient(to right, #639a88 0 50%, #ffffff 50% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
 
 .skill-measurement-30 {
-  width: 15em;
-  height: 1.2em;
+  width: 240px;
+  height: 20px;
   background: linear-gradient(to right, #639a88 0 30%, #ffffff 30% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
+}
+
+.employment-description {
+  position: relative;
+}
+
+/*brainwreck; is there a way to style it in a non-empirical way?*/
+.highlight-beetroot-2 {
+  background-color: #3c305ab3;
+  width: 67%;
+  height: 35%;
+  position: absolute;
+  z-index: -1;
+  bottom: 68%;
+}
+
+.highlight-beetroot-1 {
+  background-color: #3c305ab3;
+  width: 67%;
+  height: 21%;
+  position: absolute;
+  z-index: -1;
+  bottom: 81%;
+}
+
+.highlight-other-companies {
+  background-color: #3c305ab3;
+  width: 67%;
+  height: 58%;
+  position: absolute;
+  z-index: -1;
+  bottom: 48%;
 }
