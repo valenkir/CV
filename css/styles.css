@@ -65,20 +65,25 @@ p {
   line-height: 1.5;
 }
 
+picture.certificate img {
+  margin: 2% auto auto 6%;
+}
+
+/*how to apply it without a special class for the 1st certificate?*/
+picture.certificate img.first-certificate {
+  margin-top: 0;
+}
+
 .skill-measurement-text {
   color: white;
   font-size: 1.3em;
   margin: 2% auto auto 6%;
 }
 
-picture {
-  margin-left: 5%;
-}
-
 .skill-measurement-85 {
   width: 15em;
   height: 1.2em;
-  background: linear-gradient(to right, #639a88 0 85%, #d9dbf1 85% 100%);
+  background: linear-gradient(to right, #639a88 0 85%, #ffffff 85% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
@@ -86,7 +91,7 @@ picture {
 .skill-measurement-70 {
   width: 15em;
   height: 1.2em;
-  background: linear-gradient(to right, #639a88 0 70%, #d9dbf1 70% 100%);
+  background: linear-gradient(to right, #639a88 0 70%, #ffffff 70% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
@@ -94,7 +99,7 @@ picture {
 .skill-measurement-50 {
   width: 15em;
   height: 1.2em;
-  background: linear-gradient(to right, #639a88 0 50%, #d9dbf1 50% 100%);
+  background: linear-gradient(to right, #639a88 0 50%, #ffffff 50% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
@@ -102,7 +107,7 @@ picture {
 .skill-measurement-30 {
   width: 15em;
   height: 1.2em;
-  background: linear-gradient(to right, #639a88 0 30%, #d9dbf1 30% 100%);
+  background: linear-gradient(to right, #639a88 0 30%, #ffffff 30% 100%);
   margin-left: 6%;
   margin-top: 0.7%;
 }
