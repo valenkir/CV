@@ -79,6 +79,10 @@ ul {
   font-size: 20px;
 }
 
+.nested-list {
+  list-style-type: none;
+}
+
 picture.certificate img {
   margin: 1% auto auto 6%;
   border: 6px solid #d9dbf1;
