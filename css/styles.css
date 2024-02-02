@@ -1,10 +1,14 @@
+body {
+  background-color: #444b6e;
+  font-family: "Verdana", sans-serif;
+}
+
 #portrait {
   height: 200px;
   width: 160px;
   border-radius: 10%;
-  margin-top: 1%;
-  border-style: solid;
-  border-color: white;
+  margin-top: 2%;
+  border: 0.3em solid white;
 }
 
 #cv-header {
@@ -14,19 +18,19 @@
 }
 
 h1 {
-  font-family: "Verdana", sans-serif;
+  font-size: 1.7em;
   margin-top: 1%;
 }
 
 h2 {
-  font-family: "Verdana", sans-serif;
-  margin-top: 1%;
-  margin-left: 3%;
+  font-size: 1.5em;
+  margin: 2% auto 2% 5%;
   color: white;
 }
 
 h3 {
-  font-family: Verdana, sans-serif;
+  font-size: 1.3em;
+  margin-top: 1%;
   margin-bottom: 1%;
 }
 
@@ -37,21 +41,16 @@ address {
 .contacts {
   color: inherit;
   margin-right: 1%;
-}
-
-.contacts-location {
-  font: 1em "Verdana", sans-serif;
-}
-
-body {
-  background-color: #444b6e;
-  margin: 0;
-  padding: 0;
+  font-size: 1.1em;
 }
 
 header hr {
-  margin-top: 1%;
+  margin-top: 2%;
   border: 1.5px solid white;
+}
+
+main hr {
+  margin: 2% auto 2% auto;
 }
 
 footer a {
@@ -60,19 +59,50 @@ footer a {
 
 p {
   color: white;
-  font: 1.5em "Verdana", sans-serif;
-  border: 1px solid white;
-  padding: 1%;
+  font-size: 1.3em;
   width: 70%;
-  margin-left: 3%;
+  margin: 2% auto 2% 6%;
+  line-height: 1.5;
+}
+
+.skill-measurement-text {
+  color: white;
+  font-size: 1.3em;
+  margin: 2% auto auto 6%;
 }
 
 picture {
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
-.skills-meter {
-  color: white;
-  font: 1.5em "Verdana", sans-serif;
-  margin-left: 3%;
+.skill-measurement-85 {
+  width: 15em;
+  height: 1.2em;
+  background: linear-gradient(to right, #639a88 0 85%, #d9dbf1 85% 100%);
+  margin-left: 6%;
+  margin-top: 0.7%;
+}
+
+.skill-measurement-70 {
+  width: 15em;
+  height: 1.2em;
+  background: linear-gradient(to right, #639a88 0 70%, #d9dbf1 70% 100%);
+  margin-left: 6%;
+  margin-top: 0.7%;
+}
+
+.skill-measurement-50 {
+  width: 15em;
+  height: 1.2em;
+  background: linear-gradient(to right, #639a88 0 50%, #d9dbf1 50% 100%);
+  margin-left: 6%;
+  margin-top: 0.7%;
+}
+
+.skill-measurement-30 {
+  width: 15em;
+  height: 1.2em;
+  background: linear-gradient(to right, #639a88 0 30%, #d9dbf1 30% 100%);
+  margin-left: 6%;
+  margin-top: 0.7%;
 }
