@@ -66,6 +66,11 @@ p {
   line-height: 1.5;
 }
 
+.next-line-text {
+  display: block;
+  margin: 0.5% 0;
+}
+
 .employment-period {
   color: #a8ffe2;
   font-size: 16px;
@@ -84,7 +89,7 @@ ul {
 }
 
 picture.certificate img {
-  margin: 1% auto auto 6%;
+  margin: 1% auto auto 10%;
   border: 6px solid #d9dbf1;
   border-radius: 3%;
 }
@@ -92,6 +97,10 @@ picture.certificate img {
 /*how to apply it without a special class for the 1st certificate?*/
 picture.certificate img.first-certificate {
   margin-top: 0;
+}
+
+.certificates-block-width {
+  width: 50%;
 }
 
 .skill-measurement-text {
@@ -104,32 +113,28 @@ picture.certificate img.first-certificate {
   width: 240px;
   height: 20px;
   background: linear-gradient(to right, #639a88 0 85%, #ffffff 85% 100%);
-  margin-left: 6%;
-  margin-top: 0.7%;
+  margin: 0.7% auto 0.7% 6%;
 }
 
 .skill-measurement-70 {
   width: 240px;
   height: 20px;
   background: linear-gradient(to right, #639a88 0 70%, #ffffff 70% 100%);
-  margin-left: 6%;
-  margin-top: 0.7%;
+  margin: 0.7% auto 0.7% 6%;
 }
 
 .skill-measurement-50 {
   width: 240px;
   height: 20px;
   background: linear-gradient(to right, #639a88 0 50%, #ffffff 50% 100%);
-  margin-left: 6%;
-  margin-top: 0.7%;
+  margin: 0.7% auto 0.7% 6%;
 }
 
 .skill-measurement-30 {
   width: 240px;
   height: 20px;
   background: linear-gradient(to right, #639a88 0 30%, #ffffff 30% 100%);
-  margin-left: 6%;
-  margin-top: 0.7%;
+  margin: 0.7% auto 0.7% 6%;
 }
 
 .employment-description {
@@ -143,7 +148,7 @@ picture.certificate img.first-certificate {
   height: 35%;
   position: absolute;
   z-index: -1;
-  bottom: 68%;
+  bottom: 67.5%;
 }
 
 .highlight-beetroot-1 {
@@ -152,7 +157,7 @@ picture.certificate img.first-certificate {
   height: 21%;
   position: absolute;
   z-index: -1;
-  bottom: 81%;
+  bottom: 80.5%;
 }
 
 .highlight-other-companies {
@@ -161,5 +166,5 @@ picture.certificate img.first-certificate {
   height: 58%;
   position: absolute;
   z-index: -1;
-  bottom: 48%;
+  bottom: 47%;
 }
