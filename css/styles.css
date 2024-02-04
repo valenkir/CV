@@ -3,7 +3,7 @@ body {
   font-family: "Verdana", sans-serif;
 }
 
-#portrait {
+.portrait {
   height: 200px;
   width: 160px;
   border-radius: 10%;
