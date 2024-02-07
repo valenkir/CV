@@ -3,14 +3,6 @@ body {
   font-family: "Verdana", sans-serif;
 }
 
-.portrait {
-  height: 200px;
-  width: 160px;
-  border-radius: 10%;
-  margin-top: 2%;
-  border: 5px solid #d9dbf1;
-}
-
 #cv-header {
   background-color: #3d315b;
   text-align: center;
@@ -35,8 +27,33 @@ h3 {
   color: white;
 }
 
-.company-heading {
-  margin: 1% auto auto 6%;
+hr {
+  margin: 2% auto;
+  border: 1.5px solid white;
+}
+
+ul {
+  color: white;
+  list-style-type: disc;
+  margin-left: 7%;
+  line-height: 2;
+  font-size: 20px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  margin: 0.5% auto 1% 6%;
+  line-height: 1.5;
+}
+
+.portrait {
+  height: 200px;
+  width: 160px;
+  border-radius: 10%;
+  margin-top: 2%;
+  border: 5px solid #d9dbf1;
 }
 
 address {
@@ -49,21 +66,22 @@ address {
   font-size: 18px;
 }
 
-hr {
-  margin: 2% auto;
-  border: 1.5px solid white;
-}
-
-footer a {
-  color: white;
-}
-
-p {
-  color: white;
+#profile a {
+  margin: 2% auto auto 6%;
+  padding: 0.5%;
+  display: inline-block;
   font-size: 20px;
-  width: 70%;
-  margin: 0.5% auto 1% 6%;
-  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+}
+
+#profile a:hover {
+  padding: 0.5%;
+  background-color: #3d315b;
+}
+
+.company-heading {
+  margin: 1% auto auto 6%;
 }
 
 .next-line-text {
@@ -76,31 +94,14 @@ p {
   font-size: 16px;
 }
 
-ul {
-  color: white;
-  list-style-type: disc;
-  margin-left: 7%;
-  line-height: 2;
-  font-size: 20px;
+.highlight {
+  background-color: #3c305ab3;
+  display: inline-block;
+  width: 67.5%;
 }
 
 .nested-list {
   list-style-type: none;
-}
-
-picture.certificate img {
-  margin: 1% auto auto 10%;
-  border: 6px solid #d9dbf1;
-  border-radius: 3%;
-}
-
-/*how to apply it without a special class for the 1st certificate?*/
-picture.certificate img.first-certificate {
-  margin-top: 0;
-}
-
-.certificates-block-width {
-  width: 50%;
 }
 
 .skill-measurement-text {
@@ -137,12 +138,25 @@ picture.certificate img.first-certificate {
   margin: 0.7% auto 0.7% 6%;
 }
 
-.employment-description {
-  position: relative;
+picture.certificate img {
+  margin: 1% auto auto 10%;
+  border: 6px solid #d9dbf1;
+  border-radius: 3%;
 }
 
+picture.certificate img.first-certificate {
+  margin-top: 0;
+}
+
+.certificates-block-width {
+  width: 50%;
+}
+/* .employment-description {
+  position: relative;
+} */
+
 /*brainwreck; is there a way to style it in a non-empirical way?*/
-.highlight-beetroot-2 {
+/* .highlight-beetroot-2 {
   background-color: #3c305ab3;
   width: 67%;
   height: 35%;
@@ -167,4 +181,4 @@ picture.certificate img.first-certificate {
   position: absolute;
   z-index: -1;
   bottom: 47%;
-}
+} */
