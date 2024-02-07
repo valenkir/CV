@@ -73,11 +73,13 @@ address {
   font-size: 20px;
   color: white;
   text-decoration: none;
+  border: 2px solid white;
+  background-color: #3d315b;
 }
 
 #profile a:hover {
   padding: 0.5%;
-  background-color: #3d315b;
+  background-color: #3c305ab8;
 }
 
 .company-heading {
