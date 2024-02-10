@@ -1,6 +1,19 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 1000;
+}
+
 body {
   background-color: #444b6e;
-  font-family: "Verdana", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*Helper classes*/
+
+.font-size-20 {
+  font-size: 20px;
 }
 
 #cv-header {
@@ -10,6 +23,7 @@ body {
 
 h1 {
   font-size: 26px;
+  font-weight: 600;
   margin-top: 1%;
   color: white;
 }
@@ -18,6 +32,7 @@ h2 {
   font-size: 22px;
   margin: 2% auto 2% 5%;
   color: white;
+  font-weight: 800;
 }
 
 h3 {
@@ -70,7 +85,6 @@ address {
   margin: 2% auto auto 6%;
   padding: 0.5%;
   display: inline-block;
-  font-size: 20px;
   color: white;
   text-decoration: none;
   border: 2px solid white;
@@ -102,13 +116,20 @@ address {
   width: 67.5%;
 }
 
+.highlight > h3 {
+  margin-left: 9%;
+}
+
+.highlight > p {
+  margin-left: 9%;
+}
+
 .nested-list {
   list-style-type: none;
 }
 
 .skill-measurement-text {
   color: white;
-  font-size: 20px;
   margin: 2% auto auto 6%;
 }
 
@@ -133,6 +154,13 @@ address {
   margin: 0.7% auto 0.7% 6%;
 }
 
+.skill-measurement-40 {
+  width: 240px;
+  height: 20px;
+  background: linear-gradient(to right, #639a88 0 40%, #ffffff 40% 100%);
+  margin: 0.7% auto 0.7% 6%;
+}
+
 .skill-measurement-30 {
   width: 240px;
   height: 20px;
@@ -153,34 +181,3 @@ picture.certificate img.first-certificate {
 .certificates-block-width {
   width: 50%;
 }
-/* .employment-description {
-  position: relative;
-} */
-
-/*brainwreck; is there a way to style it in a non-empirical way?*/
-/* .highlight-beetroot-2 {
-  background-color: #3c305ab3;
-  width: 67%;
-  height: 35%;
-  position: absolute;
-  z-index: -1;
-  bottom: 67.5%;
-}
-
-.highlight-beetroot-1 {
-  background-color: #3c305ab3;
-  width: 67%;
-  height: 21%;
-  position: absolute;
-  z-index: -1;
-  bottom: 80.5%;
-}
-
-.highlight-other-companies {
-  background-color: #3c305ab3;
-  width: 67%;
-  height: 58%;
-  position: absolute;
-  z-index: -1;
-  bottom: 47%;
-} */
