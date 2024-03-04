@@ -23,6 +23,10 @@ body {
   background: linear-gradient(to right, rgb(191, 217, 213, 0.5), white);
 }
 
+.text-primary-custom {
+  color: #294d4a;
+}
+
 .h-25-p {
   height: 25px;
 }
@@ -105,7 +109,7 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-areas: "skills employment" "skills education" "skills certificates";
   column-gap: 4%;
-  row-gap: 1%;
+  row-gap: 5rem;
   padding: 2% 0 2% 2%;
 }
 
