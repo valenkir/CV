@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
 @font-face {
   font-family: "Josefin Sans";
   src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf")
@@ -20,6 +27,14 @@ body {
 }
 
 .bg-l-blue {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(191, 217, 213, 0.5)),
+    to(white)
+  );
+  background: -o-linear-gradient(left, rgb(191, 217, 213, 0.5), white);
   background: linear-gradient(to right, rgb(191, 217, 213, 0.5), white);
 }
 
@@ -50,16 +65,24 @@ body {
 }
 
 .header {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 4% 5fr;
   grid-template-columns: 1fr 5fr;
+  -ms-grid-rows: (3) [1fr];
   grid-template-rows: repeat(1fr, 3);
   grid-template-areas: "portrait about" "portrait line" "portrait contacts";
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
   column-gap: 4%;
   padding: 2%;
   color: white;
 }
 
 .portrait-section {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
   grid-area: portrait;
   text-align: center;
 }
@@ -69,14 +92,20 @@ body {
 }
 
 .about-me-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: about;
 }
 
 .header__line {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: line;
 }
 
 .contacts-section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: contacts;
 }
 
@@ -85,56 +114,93 @@ body {
 }
 
 .contacts-section__contact-link::after {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   background-color: white;
+  -webkit-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
   transition-duration: 1000ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   bottom: 0;
   left: 0;
 }
 
 .contacts-section__contact-link:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
 }
 
 .grid-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 4% 5fr;
   grid-template-columns: 1fr 5fr;
+  -ms-grid-rows: auto 5rem auto 5rem auto;
   grid-template-areas: "skills employment" "skills education" "skills certificates";
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
   column-gap: 4%;
   row-gap: 5rem;
   padding: 2% 0 2% 2%;
 }
 
 .skills-section {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
   grid-area: skills;
   border-right: 0.3rem solid #70a9a1;
 }
 
 .skills-section__progress-bar {
+  -webkit-box-shadow: 0 0 10px #294d4a inset;
   box-shadow: 0 0 10px #294d4a inset;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  -o-transition: transform 500ms;
   transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 .skills-section__progress-bar:hover {
+  -webkit-transform: scaleX(1.1);
+  -ms-transform: scaleX(1.1);
   transform: scaleX(1.1);
 }
 
 .employment-history-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: employment;
 }
 
 .education-section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: education;
 }
 
 .certificates-section {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: certificates;
 }
