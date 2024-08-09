@@ -1,37 +1,56 @@
+@use "sass:color";
+
 @font-face {
   font-family: "Josefin Sans";
   src: url("../assets/fonts/JosefinSans-Regular.ttf");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Josefin Sans";
   src: url("../assets/fonts/JosefinSans-SemiBold.ttf");
   font-weight: 600;
 }
+
 @font-face {
   font-family: "Josefin Sans";
-  src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf")
+    format("truetype-variations");
   font-weight: 100 1000;
 }
-/*HELPER CLASSES*/
-.contrast {
-  color: #ffffff;
-}
 
-.text-accent {
-  color: #294d4a;
+$bg-primary: #294d4a;
+$bg-secondary: #70a9a1;
+$gradient-primary: #bfd9d5;
+$gradient-secondary: #ffffff;
+
+$textColors: (
+  contrast: #ffffff,
+  text-accent: #294d4a,
+);
+
+/*HELPER CLASSES*/
+
+@each $name, $color in $textColors {
+  .#{$name} {
+    color: $color;
+  }
 }
 
 .bg-primary-custom {
-  background-color: #294d4a;
+  background-color: $bg-primary;
 }
 
 .bg-secondary-custom {
-  background-color: #70a9a1;
+  background-color: $bg-secondary;
 }
 
 .bg-l-blue {
-  background: linear-gradient(to right, #bfd9d5, #ffffff);
+  background: linear-gradient(
+    to right,
+    color.adjust($gradient-primary, $alpha: 0.5),
+    $gradient-secondary
+  );
 }
 
 .h-25-p {
@@ -53,7 +72,7 @@
 }
 
 .border-custom {
-  border: 10px solid #bfd9d5;
+  border: 10px solid $gradient-primary;
 }
 
 body {
@@ -66,10 +85,9 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat(1fr, 3);
   grid-template-areas: "portrait about" "portrait line" "portrait contacts";
-  -moz-column-gap: 4%;
-       column-gap: 4%;
+  column-gap: 4%;
   padding: 2%;
-  color: #ffffff;
+  color: $gradient-secondary;
 }
 
 .portrait-section {
@@ -78,7 +96,7 @@ body {
 }
 
 .header__portrait {
-  border: 6px solid #ffffff;
+  border: 6px solid $gradient-secondary;
 }
 
 .about-me-section {
@@ -103,7 +121,7 @@ body {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #ffffff;
+  background-color: $gradient-secondary;
   transition-duration: 1000ms;
   transition-property: transform;
   transform-origin: center;
@@ -122,15 +140,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-areas: "skills employment" "skills education" "skills certificates";
-  -moz-column-gap: 4%;
-       column-gap: 4%;
+  column-gap: 4%;
   row-gap: 5rem;
   padding: 2% 0 2% 2%;
 }
 
 .skills-section {
   grid-area: skills;
-  border-right: 0.3rem solid #70a9a1;
+  border-right: 0.3rem solid $bg-secondary;
 }
 
 .skills-section__progress-bar {
@@ -152,4 +169,4 @@ body {
 
 .certificates-section {
   grid-area: certificates;
-}/*# sourceMappingURL=styles.css.map */
+}
